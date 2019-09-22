@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "D:\\webpsstar\\webpsstar.csproj": {}
+    "D:\\Development\\VS\\Psstar\\webpsstar.csproj": {}
   },
   "projects": {
-    "D:\\webpsstar\\webpsstar.csproj": {
+    "D:\\Development\\VS\\Psstar\\webpsstar.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\webpsstar\\webpsstar.csproj",
+        "projectUniqueName": "D:\\Development\\VS\\Psstar\\webpsstar.csproj",
         "projectName": "webpsstar",
-        "projectPath": "D:\\webpsstar\\webpsstar.csproj",
-        "packagesPath": "C:\\Users\\Programmer\\.nuget\\packages\\",
-        "outputPath": "D:\\webpsstar\\obj\\",
+        "projectPath": "D:\\Development\\VS\\Psstar\\webpsstar.csproj",
+        "packagesPath": "C:\\Users\\sleep\\.nuget\\packages\\",
+        "outputPath": "D:\\Development\\VS\\Psstar\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\Programmer\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\sleep\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

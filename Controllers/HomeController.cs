@@ -24,6 +24,20 @@ namespace webpsstar.Controllers
             return View();
         }
 
+          public IActionResult Contact()
+        {
+            return View();
+        }
+        public IActionResult Service()
+        {
+            return View();
+        }
+        public IActionResult Blog()
+        {
+            return View();
+        }
+        // contactservice
+
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {

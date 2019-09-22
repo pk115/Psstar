@@ -1,5 +1,5 @@
 {
-  "FilePath": "d:\\webpsstar\\webpsstar.csproj",
+  "FilePath": "d:\\Development\\VS\\Psstar\\webpsstar.csproj",
   "Configuration": {
     "ConfigurationName": "MVC-2.1",
     "LanguageVersion": "2.1",
@@ -2996,8 +2996,23 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "Views\\Home\\Blog.cshtml",
+      "TargetPath": "Views\\Home\\Blog.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "Views\\_ViewStart.cshtml",
       "TargetPath": "Views\\_ViewStart.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Views\\Home\\Service.cshtml",
+      "TargetPath": "Views\\Home\\Service.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Views\\Home\\Contact.cshtml",
+      "TargetPath": "Views\\Home\\Contact.cshtml",
       "FileKind": "mvc"
     },
     {

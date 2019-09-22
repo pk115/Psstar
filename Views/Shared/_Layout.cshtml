@@ -17,14 +17,14 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="description" content="Transportation & Agency Template is a simple Smooth transportation and Agency Based Template" />
+        <meta name="description" content="Psstar " />
         <meta name="keywords" content="Portfolio, Agency, Onepage, Html, Business, Blog, Parallax" />
 
         <!--====== TITLE TAG ======-->
-        <title>Carries HTML5 Business Template</title>
+        <title>PSStar Service and Logistics co,ltd</title>
 
         <!--====== FAVICON ICON =======-->
-        <link rel="shortcut icon" type="image/ico" href="~/img/favicon.png" />
+        <link rel="shortcut icon" type="image/ico" href="~/img/favicon.jpg" />
 
         <!--====== STYLESHEETS ======-->
         <link rel="stylesheet" href="~/css/normalize.css">
@@ -59,7 +59,7 @@
         <a href="#home" class="scrolltotop"><i class="fa fa-long-arrow-up"></i></a>
 
         <!--START TOP AREA-->
-        <header class="top-area" id="home">
+        <header class="top-area @(Context.Request.Path =="/"  ? "" : "single-page")" id="home">
             <div class="top-area-bg" data-stellar-background-ratio="0.6"></div>
             <div class="header-top-area">
                 <!--MAINMENU AREA-->
@@ -97,29 +97,14 @@
                                         <a href="@Url.Action("about","Home")">about</a>
                                     </li>
                                     <li>
-                                        <a href="service.html">Service</a>
+                                        <a href="@Url.Action("Service","Home")">Service</a>
+                                    </li>
+                                  
+                                    <li>
+                                        <a href="@Url.Action("Blog","Home")">Blog</a>
                                     </li>
                                     <li>
-                                        <a href="">Other Pages</a>
-                                        <ul>
-                                            <li><a href="404.html">404</a></li>
-                                            <li><a href="coming-soon.html">Coming Soon</a></li>
-                                        </ul>
-                                    </li>
-                                    <li>
-                                        <a href="blog.html">Blog</a>
-                                        <ul>
-                                            <li><a href="blog.html">Blog Version 1</a></li>
-                                            <li><a href="blog-2.html">Blog Version 2</a></li>
-                                            <li><a href="single-blog.html">Single Blog</a></li>
-                                        </ul>
-                                    </li>
-                                    <li>
-                                        <a href="contact.html">Contact</a>
-                                        <ul>
-                                            <li><a href="contact.html">Contact Version 1</a></li>
-                                            <li><a href="contact-2.html">Contact Version 2</a></li>
-                                        </ul>
+                                        <a href="@Url.Action("Contact","Home")">Contact</a>
                                     </li>
                                 </ul>
                             </div>
@@ -128,72 +113,75 @@
                 </div>
                 <!--END MAINMENU AREA END-->
             </div>
-            @if(Context.Request.Path=="/"){
-            <!--HOME SLIDER AREA-->
-            <div class="welcome-slider-area">
-                <div class="welcome-single-slide slider-bg-one">
-                    <div class="container">
-                        <div class="row flex-v-center">
-                            <div class="col-md-10 col-md-offset-1">
-                                <div class="welcome-text text-center">
-                                    <h1>PSStar Service and Logistics co,ltd</h1>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
-                                    <div class="home-button">
-                                        <a href="#">Our Service</a>
-                                        <a href="#">Get A Quate</a>
+            @if (Context.Request.Path == "/")
+            {
+                <!--HOME SLIDER AREA-->
+                <div class="welcome-slider-area">
+                    <div class="welcome-single-slide slider-bg-one">
+                        <div class="container">
+                            <div class="row flex-v-center">
+                                <div class="col-md-10 col-md-offset-1">
+                                    <div class="welcome-text text-center">
+                                        <h1>PSStar Service and Logistics co,ltd</h1>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                                        <div class="home-button">
+                                            <a href="#">Our Service</a>
+                                            <a href="#">Get A Quate</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="welcome-single-slide slider-bg-two">
+                        <div class="container">
+                            <div class="row flex-v-center">
+                                <div class="col-md-10 col-md-offset-1">
+                                    <div class="welcome-text text-center">
+                                        <h1>WE MAKE STRONGEST SERVICE ABOVE THE WORLD</h1>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                                        <div class="home-button">
+                                            <a href="#">Our Service</a>
+                                            <a href="#">Get A Quate</a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="welcome-single-slide slider-bg-two">
+                <!--END HOME SLIDER AREA-->
+
+
+            }
+            else
+            {
+
+                <!--Outer  AREA-->
+                <div class="welcome-area">
+                    <div class="area-bg"></div>
                     <div class="container">
                         <div class="row flex-v-center">
-                            <div class="col-md-10 col-md-offset-1">
+                            <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
                                 <div class="welcome-text text-center">
-                                    <h1>WE MAKE STRONGEST SERVICE ABOVE THE WORLD</h1>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
-                                    <div class="home-button">
-                                        <a href="#">Our Service</a>
-                                        <a href="#">Get A Quate</a>
-                                    </div>
+                                    <h2>About Us</h2>
+                                    <ul class="page-location">
+                                        <li><a href="#">Home</a></li>
+                                        <li>/</li>
+                                        <li><a href="#">About</a></li>
+                                    </ul>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <!--END HOME SLIDER AREA-->
-         
-
-            }else{
-
-            <!--Outer  AREA-->
-            <div class="welcome-area">
-                <div class="area-bg"></div>
-                <div class="container">
-                    <div class="row flex-v-center">
-                        <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
-                            <div class="welcome-text text-center">
-                                <h2>About Us</h2>
-                                <ul class="page-location">
-                                    <li><a href="#">Home</a></li>
-                                    <li>/</li>
-                                    <li><a href="#">About</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!--END Outer AREA-->
+                <!--END Outer AREA-->
             }
             @*@Context.Request.Host*@
         </header>
         <!--END TOP AREA-->
-        
-        
+
+
         @RenderBody()
         <!--FOOER AREA-->
         <div class="footer-area dark-bg">
@@ -339,6 +327,8 @@
 
         <!--===== ACTIVE JS=====-->
         <script src="~/js/main.js"></script>
+        <script type="~/text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBTS_KEDfHXYBslFTI_qPJIybDP3eceE-A&sensor=false"></script>
+        <script src="~/js/maps.active.js"></script>
         @RenderSection("Scripts", required: false)
     </body>
 
